@@ -1,5 +1,5 @@
 import React from 'react'
-import { SiCplusplus, SiJava, SiPython, SiJavascript, SiReact, SiNodedotjs, SiMongodb, SiMysql, SiPostgresql, SiGit } from 'react-icons/si'
+import { SiCplusplus, SiPython, SiJavascript, SiReact, SiNodedotjs, SiMongodb, SiMysql, SiPostgresql, SiGit } from 'react-icons/si'
 
 const Skills = () => {
   const skills = {
@@ -40,7 +40,7 @@ const Skills = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
           {[
             { name: 'C++', icon: <SiCplusplus size={40} /> },
-            { name: 'Java', icon: <SiJava size={40} /> },
+            { name: 'Java', icon: <span className="text-4xl font-bold">☕</span> },
             { name: 'Python', icon: <SiPython size={40} /> },
             { name: 'JavaScript', icon: <SiJavascript size={40} /> },
             { name: 'React', icon: <SiReact size={40} /> },

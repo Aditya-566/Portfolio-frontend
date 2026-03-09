@@ -1,27 +1,28 @@
-import React from 'react'
-import { HiOutlineExternalLink, HiEnvelope, HiGlobeAlt } from 'react-icons/hi'
+import React from 'react';
+import { HiOutlineEnvelope } from 'react-icons/hi2';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const SocialLinks = () => {
   const socials = [
     {
       name: 'LinkedIn',
       url: 'https://linkedin.com/in/ad-566',
-      icon: <HiGlobeAlt size={24} />,
+      icon: <FaLinkedin size={24} />,
       color: 'hover:text-blue-400',
     },
     {
       name: 'GitHub',
       url: 'https://github.com/Ad-566',
-      icon: <HiGlobeAlt size={24} />,
+      icon: <FaGithub size={24} />,
       color: 'hover:text-gray-300',
     },
     {
       name: 'Email',
       url: 'mailto:aditya@gmail.com',
-      icon: <HiEnvelope size={24} />,
+      icon: <HiOutlineEnvelope size={24} />,
       color: 'hover:text-red-400',
     },
-  ]
+  ];
 
   return (
     <>
@@ -38,7 +39,7 @@ const SocialLinks = () => {
         </a>
       ))}
     </>
-  )
-}
+  );
+};
 
-export default SocialLinks
+export default SocialLinks;

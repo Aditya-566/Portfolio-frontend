@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { HiMail, HiPhone, HiLocationMarker, HiCheckCircle, HiExclamation } from 'react-icons/hi'
+import { HiMail, HiPhone, HiCheckCircle, HiExclamation } from 'react-icons/hi'
+import { SiWhatsapp } from 'react-icons/si'
 import axios from 'axios'
 
 const Contact = () => {
