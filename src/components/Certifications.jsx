@@ -7,30 +7,35 @@ const Certifications = () => {
       title: 'Build Generative AI Apps and Solutions with No-Code Tools',
       issuer: 'Infosys',
       year: '2025',
+      image: '/photos/no code ai tools ceritficate.png',
       icon: '🤖',
     },
     {
       title: 'Data Structures and Algorithms Using C++',
       issuer: 'Lovely Professional University',
       year: '2025',
+      image: '/photos/Dsa .png',
       icon: '📊',
     },
     {
       title: 'Cloud Computing',
       issuer: 'NPTEL',
       year: '2025',
+      image: '/photos/NPTEL.png',
       icon: '☁️',
     },
     {
       title: 'Excellent Python 3 Bootcamp',
       issuer: 'Udemy',
       year: '2023',
+      image: '/photos/python bootcamp.png',
       icon: '🐍',
     },
     {
       title: 'Lean Management',
       issuer: 'Simplilearn',
       year: '2023',
+      image: '/photos/lean managment.png',
       icon: '📈',
     },
   ]
@@ -61,25 +66,29 @@ const Certifications = () => {
           ))}
         </div>
 
-        {/* Certificate Gallery Placeholder */}
+        {/* Certificate Gallery */}
         <div className="mt-12 glass p-8">
           <h3 className="text-2xl font-bold text-purple-400 mb-6">Certificate Gallery</h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {certifications.map((cert, index) => (
               <div
-                key={i}
-                className="aspect-video bg-slate-700 rounded-lg flex items-center justify-center border-2 border-dashed border-purple-500/30 hover:border-purple-500 transition-colors"
+                key={index}
+                className="group relative overflow-hidden rounded-lg bg-slate-700 border border-purple-500/30 hover:border-purple-500 transition-all duration-300"
               >
-                <div className="text-center">
-                  <HiAcademicCap className="text-gray-500 mx-auto mb-2" size={32} />
-                  <p className="text-xs text-gray-500">Certificate {i}</p>
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img 
+                    src={cert.image} 
+                    alt={cert.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                  <p className="text-xs font-bold text-purple-300 mb-1">{cert.issuer}</p>
+                  <p className="text-[10px] text-gray-300 line-clamp-2">{cert.title}</p>
                 </div>
               </div>
             ))}
           </div>
-          <p className="text-center text-sm text-gray-400 mt-4">
-            Certificate images coming soon! 📸
-          </p>
         </div>
       </div>
     </section>

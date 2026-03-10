@@ -52,8 +52,8 @@ const Footer = () => {
                 </a>
               </p>
               <p className="text-gray-400">
-                <a href="tel:+919811152" className="hover:text-purple-400 transition-colors">
-                  +91-9811152
+                <a href="tel:+919816511152" className="hover:text-purple-400 transition-colors">
+                  +91-9816511152
                 </a>
               </p>
             </div>
@@ -72,7 +72,7 @@ const Footer = () => {
           </p>
           <div className="flex gap-6">
             <a
-              href="https://linkedin.com/in/ad-566"
+              href="https://www.linkedin.com/in/aditya566/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-purple-400 transition-colors"
@@ -80,7 +80,7 @@ const Footer = () => {
               LinkedIn
             </a>
             <a
-              href="https://github.com/Ad-566"
+              href="https://github.com/Aditya-566"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-purple-400 transition-colors"
