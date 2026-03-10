@@ -8,35 +8,35 @@ const Certifications = () => {
       issuer: 'Infosys',
       year: '2025',
       icon: '🤖',
-      image: '/images/certifications/infosys-ai.jpg'
+      image: '/images/certifications/generative-ai.png'
     },
     {
       title: 'Data Structures and Algorithms Using C++',
       issuer: 'Lovely Professional University',
       year: '2025',
       icon: '📊',
-      image: '/images/certifications/dsa-cpp.jpg'
+      image: '/images/certifications/dsa.png'
     },
     {
       title: 'Cloud Computing',
       issuer: 'NPTEL',
       year: '2025',
       icon: '☁️',
-      image: '/images/certifications/cloud-computing.jpg'
+      image: '/images/certifications/nptel.png'
     },
     {
       title: 'Excellent Python 3 Bootcamp',
       issuer: 'Udemy',
       year: '2023',
       icon: '🐍',
-      image: '/images/certifications/python.jpg'
+      image: '/images/certifications/python.png'
     },
     {
       title: 'Lean Management',
       issuer: 'Simplilearn',
       year: '2023',
       icon: '📈',
-      image: '/images/certifications/lean-management.jpg'
+      image: '/images/certifications/lean-management.png'
     },
   ]
 
