@@ -38,7 +38,7 @@ const Education = () => {
           {education.map((edu, index) => (
             <div
               key={index}
-              className="card group relative overflow-hidden"
+              className="group relative overflow-hidden"
             >
               {/* Background gradient on hover */}
               <div className="absolute inset-0 bg-gradient-to-r from-purple-500/0 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -77,7 +77,7 @@ const Education = () => {
         </div>
 
         {/* Timeline */}
-        <div className="mt-12 glass p-8">
+        <div className="mt-12 p-8">
           <h3 className="text-2xl font-bold text-purple-400 mb-8 flex items-center gap-2">
             <HiAcademicCap />
             Academic Timeline

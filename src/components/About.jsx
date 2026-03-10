@@ -2,11 +2,11 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section id="about" className="py-20 px-4 bg-slate-800/50">
+    <section id="about" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <h2 className="section-title text-center mb-12">About Me</h2>
 
-        <div className="glass p-8 md:p-12">
+        <div className="mt-12 p-8 md:p-12">
           <p className="text-lg text-gray-300 leading-relaxed mb-6 text-center md:text-left">
             I am a <span className="font-semibold text-purple-400">Computer Science Engineering student</span> at 
             <span className="font-semibold text-purple-400"> Lovely Professional University</span> passionate about 

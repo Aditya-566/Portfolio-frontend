@@ -111,7 +111,7 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="py-20 px-4 bg-slate-800/50">
+    <section id="contact" className="py-20 px-4">
       <div className="max-w-5xl mx-auto">
         <h2 className="section-title text-center mb-12">Get In Touch</h2>
 
@@ -126,7 +126,7 @@ const Contact = () => {
                 href={info.action}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="card flex items-center gap-4 cursor-pointer"
+                className="flex items-center gap-4 cursor-pointer"
               >
                 <div className="text-purple-400 flex-shrink-0">
                   {info.icon}
@@ -165,7 +165,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="card">
+          <div className="">
             <h3 className="text-2xl font-bold text-purple-400 mb-6">Send a Message</h3>
             <form onSubmit={handleEmailSubmit} className="space-y-4">
               <div>
@@ -178,7 +178,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleInputChange}
                   placeholder="Your Name"
-                  className="w-full px-4 py-2 bg-slate-700/50 border border-purple-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors"
+                  className="w-full px-4 py-2 bg-transparent border border-purple-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors"
                 />
               </div>
 
@@ -192,7 +192,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleInputChange}
                   placeholder="your@email.com"
-                  className="w-full px-4 py-2 bg-slate-700/50 border border-purple-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors"
+                  className="w-full px-4 py-2 bg-transparent border border-purple-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors"
                 />
               </div>
 
@@ -246,7 +246,7 @@ const Contact = () => {
         </div>
 
         {/* Additional Contact Methods */}
-        <div className="glass p-8 text-center">
+        <div className="p-8 text-center">
           <h3 className="text-xl font-bold text-purple-400 mb-4">Prefer Direct Contact?</h3>
           <p className="text-gray-300 mb-4">
             Feel free to reach out directly via email or phone. I usually respond within 24 hours!

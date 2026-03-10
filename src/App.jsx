@@ -21,9 +21,19 @@ function App() {
     }
   }, [isDark])
 
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`)
+      document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`)
+    }
+    window.addEventListener('mousemove', handleMouseMove)
+    return () => window.removeEventListener('mousemove', handleMouseMove)
+  }, [])
+
   return (
     <div className={isDark ? 'dark' : ''}>
-      <div className={`${isDark ? 'bg-gradient-dark text-white' : 'bg-white text-gray-900'} transition-colors duration-300`}>
+      <div className={`${isDark ? 'bg-black text-white' : 'bg-white text-gray-900'} transition-colors duration-300 min-h-screen relative`}>
+        <div className="spotlight"></div>
         <Navbar isDark={isDark} setIsDark={setIsDark} />
         <Hero />
         <About />

@@ -30,7 +30,7 @@ const Achievements = () => {
   ]
 
   return (
-    <section id="achievements" className="py-20 px-4 bg-slate-800/50">
+    <section id="achievements" className="py-20 px-4">
       <div className="max-w-5xl mx-auto">
         <h2 className="section-title text-center mb-12">Achievements</h2>
 
@@ -38,7 +38,7 @@ const Achievements = () => {
           {achievements.map((achievement, index) => (
             <div
               key={index}
-              className="card flex items-center gap-6 group"
+              className="flex items-center gap-6 group"
             >
               <div className="text-5xl flex-shrink-0">{achievement.icon}</div>
               <div className="flex-1">
@@ -55,7 +55,7 @@ const Achievements = () => {
         </div>
 
         {/* Additional Highlights */}
-        <div className="glass p-8">
+        <div className="p-8">
           <h3 className="text-2xl font-bold text-purple-400 mb-6 flex items-center gap-2">
             <HiStar className="text-yellow-400" />
             Highlights

@@ -64,7 +64,7 @@ const Projects = () => {
           {projects.map((project) => (
             <div
               key={project.id}
-              className={`card flex flex-col ${project.id === 3 ? 'lg:col-span-2 lg:grid lg:grid-cols-2' : ''}`}
+              className={`flex flex-col ${project.id === 3 ? 'lg:col-span-2 lg:grid lg:grid-cols-2' : ''}`}
             >
               <div>
                 <h3 className="text-xl md:text-2xl font-bold text-purple-400 mb-2">

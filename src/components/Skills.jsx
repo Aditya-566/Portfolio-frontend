@@ -29,7 +29,7 @@ const Skills = () => {
           ].map((tech) => (
             <div
               key={tech.name}
-              className="card flex flex-col items-center justify-center text-center group"
+              className="flex flex-col items-center justify-center text-center group"
             >
               <div className="text-purple-400 group-hover:text-purple-300 transition-colors mb-2">
                 {tech.icon}
@@ -42,7 +42,7 @@ const Skills = () => {
         {/* Detailed Skills Grid */}
         <div className="grid md:grid-cols-2 gap-6">
           {skillCategories.map((category) => (
-            <div key={category.title} className="card">
+            <div key={category.title} className="">
               <h3 className="text-xl font-bold text-purple-400 mb-4">{category.title}</h3>
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill) => (
@@ -59,7 +59,7 @@ const Skills = () => {
         </div>
 
         {/* Progress Bars */}
-        <div className="mt-12 glass p-8">
+        <div className="mt-12 p-8">
           <h3 className="text-2xl font-bold text-purple-400 mb-6">Proficiency Level</h3>
           <div className="space-y-6">
             {[
