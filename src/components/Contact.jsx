@@ -31,8 +31,8 @@ const Contact = () => {
     {
       icon: <SiWhatsapp size={24} />,
       label: 'WhatsApp',
-      value: '+91-9811152',
-      action: 'https://wa.me/919811152',
+      value: '+91-9816511152',
+      action: 'https://wa.me/919816511152',
     },
   ]
 
@@ -55,8 +55,8 @@ const Contact = () => {
 
     const messageText = `Hello Aditya,\nName: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`
     const encodedMessage = encodeURIComponent(messageText)
-    const whatsappUrl = `https://wa.me/919811152?text=${encodedMessage}`
-    
+    const whatsappUrl = `https://wa.me/919816511152?text=${encodedMessage}`
+
     window.open(whatsappUrl, '_blank')
   }
 
@@ -78,7 +78,7 @@ const Contact = () => {
 
     try {
       const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000'
-      
+
       const response = await axios.post(`${backendUrl}/api/contact`, {
         name: formData.name,
         email: formData.email,
@@ -212,13 +212,12 @@ const Contact = () => {
 
               {/* Status Message */}
               {status.message && (
-                <div className={`flex items-center gap-2 p-3 rounded-lg ${
-                  status.type === 'success'
+                <div className={`flex items-center gap-2 p-3 rounded-lg ${status.type === 'success'
                     ? 'bg-green-500/20 text-green-300'
                     : status.type === 'error'
-                    ? 'bg-red-500/20 text-red-300'
-                    : 'bg-blue-500/20 text-blue-300'
-                }`}>
+                      ? 'bg-red-500/20 text-red-300'
+                      : 'bg-blue-500/20 text-blue-300'
+                  }`}>
                   {status.type === 'success' && <HiCheckCircle size={20} />}
                   {status.type === 'error' && <HiExclamation size={20} />}
                   <span>{status.message}</span>
