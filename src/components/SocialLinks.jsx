@@ -6,19 +6,19 @@ const SocialLinks = () => {
   const socials = [
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/ad-566',
+      url: 'https://www.linkedin.com/in/aditya566/',
       icon: <FaLinkedin size={24} />,
       color: 'hover:text-blue-400',
     },
     {
       name: 'GitHub',
-      url: 'https://github.com/Ad-566',
+      url: 'https://github.com/Aditya-566',
       icon: <FaGithub size={24} />,
       color: 'hover:text-gray-300',
     },
     {
       name: 'Email',
-      url: 'mailto:aditya@gmail.com',
+      url: 'mailto:aditya566sharma@gmail.com',
       icon: <HiOutlineEnvelope size={24} />,
       color: 'hover:text-red-400',
     },
