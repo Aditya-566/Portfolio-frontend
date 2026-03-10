@@ -2,27 +2,6 @@ import React from 'react'
 import { SiCplusplus, SiPython, SiJavascript, SiReact, SiNodedotjs, SiMongodb, SiMysql, SiPostgresql, SiGit } from 'react-icons/si'
 
 const Skills = () => {
-  const skills = {
-    languages: [
-      { name: 'C++', icon: <SiCplusplus size={32} /> },
-      { name: 'Java', icon: <SiJava size={32} /> },
-      { name: 'Python', icon: <SiPython size={32} /> },
-      { name: 'JavaScript', icon: <SiJavascript size={32} /> },
-    ],
-    frameworks: [
-      { name: 'React.js', icon: <SiReact size={32} /> },
-      { name: 'Node.js', icon: <SiNodedotjs size={32} /> },
-    ],
-    databases: [
-      { name: 'MongoDB', icon: <SiMongodb size={32} /> },
-      { name: 'MySQL', icon: <SiMysql size={32} /> },
-      { name: 'PostgreSQL', icon: <SiPostgresql size={32} /> },
-    ],
-    tools: [
-      { name: 'Git', icon: <SiGit size={32} /> },
-    ],
-  }
-
   const skillCategories = [
     { title: 'Languages', skills: ['C++', 'Java', 'Python', 'C', 'JavaScript', 'PHP', 'HTML', 'CSS'] },
     { title: 'Frameworks', skills: ['React.js', 'Node.js', 'Express.js', 'Tailwind CSS', 'jQuery'] },
