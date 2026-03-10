@@ -25,8 +25,8 @@ const Contact = () => {
     {
       icon: <HiPhone size={24} />,
       label: 'Phone',
-      value: '+91-9811152',
-      action: 'tel:+919811152',
+      value: '+91-9816511152',
+      action: 'tel:+919816511152',
     },
     {
       icon: <SiWhatsapp size={24} />,
@@ -145,7 +145,7 @@ const Contact = () => {
               <p className="text-sm text-gray-400 mb-3">Follow me on social media:</p>
               <div className="flex gap-3">
                 <a
-                  href="https://linkedin.com/in/ad-566"
+                  href="https://www.linkedin.com/in/aditya566/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-lg hover:bg-blue-500/40 transition-colors font-semibold"
@@ -153,7 +153,7 @@ const Contact = () => {
                   LinkedIn
                 </a>
                 <a
-                  href="https://github.com/Ad-566"
+                  href="https://github.com/Aditya-566"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 bg-gray-500/20 text-gray-300 rounded-lg hover:bg-gray-500/40 transition-colors font-semibold"
@@ -260,7 +260,7 @@ const Contact = () => {
               Email Me
             </a>
             <a
-              href="tel:+919811152"
+              href="tel:+919816511152"
               className="btn-secondary"
             >
               Call Me

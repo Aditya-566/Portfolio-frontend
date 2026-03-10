@@ -16,7 +16,7 @@ const Hero = () => {
           <div className="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full bg-gradient-main p-1">
             <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center overflow-hidden">
               <img 
-                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect fill='%234F46E5' width='200' height='200'/%3E%3C/svg%3E" 
+                src="/images/profile.jpg" 
                 alt="Aditya Sharma"
                 className="w-full h-full object-cover"
               />
