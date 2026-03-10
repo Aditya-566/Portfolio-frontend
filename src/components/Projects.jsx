@@ -67,18 +67,18 @@ const Projects = () => {
               className={`flex flex-col ${project.id === 3 ? 'lg:col-span-2 lg:grid lg:grid-cols-2' : ''}`}
             >
               <div>
-                <h3 className="text-xl md:text-2xl font-bold text-purple-400 mb-2">
+                <h3 className="text-xl md:text-2xl font-bold text-cyan-400 mb-2">
                   {project.title}
                 </h3>
                 <p className="text-sm text-gray-400 mb-4 font-semibold">{project.duration}</p>
                 <p className="text-gray-300 mb-4">{project.description}</p>
 
                 <div className="mb-4">
-                  <h4 className="font-semibold text-purple-300 mb-2">Key Responsibilities:</h4>
+                  <h4 className="font-semibold text-cyan-300 mb-2">Key Responsibilities:</h4>
                   <ul className="text-sm text-gray-300 space-y-1">
                     {project.responsibilities.map((resp, idx) => (
                       <li key={idx} className="flex items-start gap-2">
-                        <span className="text-purple-400">•</span>
+                        <span className="text-cyan-400">•</span>
                         <span>{resp}</span>
                       </li>
                     ))}
@@ -86,12 +86,12 @@ const Projects = () => {
                 </div>
 
                 <div className="mb-4">
-                  <h4 className="font-semibold text-purple-300 mb-2">Tech Stack:</h4>
+                  <h4 className="font-semibold text-cyan-300 mb-2">Tech Stack:</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.tech.map((tech) => (
                       <span
                         key={tech}
-                        className="px-2 py-1 bg-purple-500/20 text-purple-300 rounded text-xs font-medium"
+                        className="px-2 py-1 bg-cyan-500/20 text-cyan-300 rounded text-xs font-medium"
                       >
                         {tech}
                       </span>
@@ -104,7 +104,7 @@ const Projects = () => {
                     <a
                       key={link.name}
                       href={link.url}
-                      className="flex items-center gap-2 px-4 py-2 bg-purple-500/20 hover:bg-purple-500/40 text-purple-300 rounded-lg transition-colors text-sm font-medium"
+                      className="flex items-center gap-2 px-4 py-2 bg-cyan-500/20 hover:bg-cyan-500/40 text-cyan-300 rounded-lg transition-colors text-sm font-medium"
                     >
                       {link.name === 'GitHub' ? <HiCode size={16} /> : <HiExternalLink size={16} />}
                       {link.name}

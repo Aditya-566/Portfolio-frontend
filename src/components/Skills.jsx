@@ -43,12 +43,12 @@ const Skills = () => {
         <div className="grid md:grid-cols-2 gap-6">
           {skillCategories.map((category) => (
             <div key={category.title} className="">
-              <h3 className="text-xl font-bold text-purple-400 mb-4">{category.title}</h3>
+              <h3 className="text-xl font-bold text-cyan-400 mb-4">{category.title}</h3>
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm font-medium hover:bg-purple-500/30 transition-colors"
+                    className="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full text-sm font-medium hover:bg-cyan-500/30 transition-colors"
                   >
                     {skill}
                   </span>
@@ -56,32 +56,6 @@ const Skills = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Progress Bars */}
-        <div className="mt-12 p-8">
-          <h3 className="text-2xl font-bold text-purple-400 mb-6">Proficiency Level</h3>
-          <div className="space-y-6">
-            {[
-              { skill: 'Frontend Development (React)', percentage: 85 },
-              { skill: 'Backend Development (Node.js)', percentage: 80 },
-              { skill: 'Database Management', percentage: 75 },
-              { skill: 'Problem Solving & Algorithms', percentage: 90 },
-            ].map((item) => (
-              <div key={item.skill}>
-                <div className="flex justify-between mb-2">
-                  <span className="font-semibold text-gray-200">{item.skill}</span>
-                  <span className="text-purple-400 font-bold">{item.percentage}%</span>
-                </div>
-                <div className="w-full bg-slate-700 rounded-full h-2">
-                  <div
-                    className="bg-gradient-main rounded-full h-2 transition-all duration-500"
-                    style={{ width: `${item.percentage}%` }}
-                  ></div>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>

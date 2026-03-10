@@ -118,7 +118,7 @@ const Contact = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-purple-400 mb-6">Connect With Me</h3>
+            <h3 className="text-2xl font-bold text-cyan-400 mb-6">Connect With Me</h3>
 
             {contactInfo.map((info, index) => (
               <a
@@ -128,12 +128,12 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 cursor-pointer"
               >
-                <div className="text-purple-400 flex-shrink-0">
+                <div className="text-cyan-400 flex-shrink-0">
                   {info.icon}
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">{info.label}</p>
-                  <p className="font-semibold text-gray-200 hover:text-purple-300 transition-colors">
+                  <p className="font-semibold text-gray-200 hover:text-cyan-300 transition-colors">
                     {info.value}
                   </p>
                 </div>
@@ -166,7 +166,7 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div className="">
-            <h3 className="text-2xl font-bold text-purple-400 mb-6">Send a Message</h3>
+            <h3 className="text-2xl font-bold text-cyan-400 mb-6">Send a Message</h3>
             <form onSubmit={handleEmailSubmit} className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-300 mb-2">
@@ -178,7 +178,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleInputChange}
                   placeholder="Your Name"
-                  className="w-full px-4 py-2 bg-transparent border border-purple-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors"
+                  className="w-full px-4 py-2 bg-transparent border border-cyan-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition-colors"
                 />
               </div>
 
@@ -192,7 +192,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleInputChange}
                   placeholder="your@email.com"
-                  className="w-full px-4 py-2 bg-transparent border border-purple-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors"
+                  className="w-full px-4 py-2 bg-transparent border border-cyan-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition-colors"
                 />
               </div>
 
@@ -206,7 +206,7 @@ const Contact = () => {
                   onChange={handleInputChange}
                   placeholder="Your message..."
                   rows="5"
-                  className="w-full px-4 py-2 bg-slate-700/50 border border-purple-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors resize-none"
+                  className="w-full px-4 py-2 bg-slate-700/50 border border-cyan-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition-colors resize-none"
                 ></textarea>
               </div>
 
@@ -247,7 +247,7 @@ const Contact = () => {
 
         {/* Additional Contact Methods */}
         <div className="p-8 text-center">
-          <h3 className="text-xl font-bold text-purple-400 mb-4">Prefer Direct Contact?</h3>
+          <h3 className="text-xl font-bold text-cyan-400 mb-4">Prefer Direct Contact?</h3>
           <p className="text-gray-300 mb-4">
             Feel free to reach out directly via email or phone. I usually respond within 24 hours!
           </p>

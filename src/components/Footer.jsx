@@ -17,7 +17,7 @@ const Footer = () => {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="bg-slate-900 border-t border-purple-500/20 py-12 px-4">
+    <footer className="bg-slate-900 border-t border-cyan-500/20 py-12 px-4">
       <div className="max-w-5xl mx-auto">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
@@ -28,13 +28,13 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-purple-400 font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-cyan-400 font-semibold mb-4">Quick Links</h4>
             <div className="flex flex-wrap gap-2">
               {footerLinks.map((link) => (
                 <button
                   key={link.name}
                   onClick={() => scrollToSection(link.id)}
-                  className="text-gray-400 hover:text-purple-400 transition-colors text-sm"
+                  className="text-gray-400 hover:text-cyan-400 transition-colors text-sm"
                 >
                   {link.name}
                 </button>
@@ -44,15 +44,15 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="text-purple-400 font-semibold mb-4">Contact</h4>
+            <h4 className="text-cyan-400 font-semibold mb-4">Contact</h4>
             <div className="space-y-2 text-sm">
               <p className="text-gray-400">
-                <a href="mailto:aditya566sharma@gmail.com" className="hover:text-purple-400 transition-colors">
+                <a href="mailto:aditya566sharma@gmail.com" className="hover:text-cyan-400 transition-colors">
                   aditya566sharma@gmail.com
                 </a>
               </p>
               <p className="text-gray-400">
-                <a href="tel:+919816511152" className="hover:text-purple-400 transition-colors">
+                <a href="tel:+919816511152" className="hover:text-cyan-400 transition-colors">
                   +91-9816511152
                 </a>
               </p>
@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent mb-8"></div>
+        <div className="h-px bg-gradient-to-r from-transparent via-cyan-500 to-transparent mb-8"></div>
 
         {/* Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
@@ -72,18 +72,18 @@ const Footer = () => {
           </p>
           <div className="flex gap-6">
             <a
-              href="https://linkedin.com/in/ad-566"
+              href="https://www.linkedin.com/in/aditya566/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-purple-400 transition-colors"
+              className="hover:text-cyan-400 transition-colors"
             >
               LinkedIn
             </a>
             <a
-              href="https://github.com/Ad-566"
+              href="https://github.com/Aditya-566"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-purple-400 transition-colors"
+              className="hover:text-cyan-400 transition-all duration-300"
             >
               GitHub
             </a>

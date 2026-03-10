@@ -41,13 +41,13 @@ const Education = () => {
               className="group relative overflow-hidden"
             >
               {/* Background gradient on hover */}
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-500/0 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/0 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               
               <div className="relative">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="text-4xl flex-shrink-0">{edu.icon}</div>
                   <div>
-                    <h3 className="text-2xl font-bold text-purple-400 group-hover:text-purple-300 transition-colors">
+                    <h3 className="text-2xl font-bold text-cyan-400 group-hover:text-cyan-300 transition-colors">
                       {edu.degree}
                     </h3>
                     <p className="text-lg font-semibold text-gray-200">{edu.field}</p>
@@ -56,7 +56,7 @@ const Education = () => {
 
                 <div className="space-y-2">
                   <p className="flex items-center gap-2 text-gray-300">
-                    <HiLocationMarker className="text-purple-400 flex-shrink-0" />
+                    <HiLocationMarker className="text-cyan-400 flex-shrink-0" />
                     {edu.institution}
                   </p>
                   <p className="text-sm text-gray-400">{edu.period}</p>
@@ -78,7 +78,7 @@ const Education = () => {
 
         {/* Timeline */}
         <div className="mt-12 p-8">
-          <h3 className="text-2xl font-bold text-purple-400 mb-8 flex items-center gap-2">
+          <h3 className="text-2xl font-bold text-cyan-400 mb-8 flex items-center gap-2">
             <HiAcademicCap />
             Academic Timeline
           </h3>
@@ -101,7 +101,7 @@ const Education = () => {
                     <div className="w-4 h-4 bg-slate-900 rounded-full"></div>
                   </div>
                   <div className="ml-4">
-                    <span className="text-purple-400 font-bold">{item.year}</span>
+                    <span className="text-cyan-400 font-bold">{item.year}</span>
                     <p className="text-gray-300">{item.label}</p>
                   </div>
                 </div>

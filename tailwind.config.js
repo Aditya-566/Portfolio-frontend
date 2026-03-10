@@ -8,13 +8,13 @@ export default {
     extend: {
       colors: {
         gradient: {
-          from: '#6366f1',
-          via: '#a855f7',
-          to: '#ec4899',
+          from: '#06b6d4', // cyan-500
+          via: '#3b82f6',   // blue-500
+          to: '#2dd4bf',   // teal-400
         },
       },
       backgroundImage: {
-        'gradient-main': 'linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%)',
+        'gradient-main': 'linear-gradient(135deg, #06b6d4 0%, #3b82f6 50%, #2dd4bf 100%)',
         'gradient-dark': 'linear-gradient(135deg, #000000 0%, #000000 100%)',
       },
       animation: {
@@ -38,8 +38,8 @@ export default {
           '50%': { transform: 'translateY(-10px)' },
         },
         glow: {
-          '0%, 100%': { textShadow: '0 0 5px rgba(99, 102, 241, 0.5)' },
-          '50%': { textShadow: '0 0 20px rgba(168, 85, 247, 0.8)' },
+          '0%, 100%': { textShadow: '0 0 5px rgba(6, 182, 212, 0.5)' },
+          '50%': { textShadow: '0 0 20px rgba(59, 130, 246, 0.8)' },
         },
       },
       backdropFilter: {
@@ -47,7 +47,7 @@ export default {
       },
       boxShadow: {
         'glass': '0 8px 32px rgba(31, 38, 135, 0.37)',
-        'glow': '0 0 20px rgba(99, 102, 241, 0.5)',
+        'glow': '0 0 20px rgba(6, 182, 212, 0.5)',
       },
     },
   },

@@ -53,7 +53,7 @@ const Certifications = () => {
             >
               <div className="text-3xl flex-shrink-0">{cert.icon}</div>
               <div className="flex-1">
-                <h3 className="font-bold text-lg text-purple-400 mb-1 group-hover:text-purple-300 transition-colors">
+                <h3 className="font-bold text-lg text-cyan-400 mb-1 group-hover:text-cyan-300 transition-colors">
                   {cert.title}
                 </h3>
                 <p className="text-sm text-gray-400 mb-1">{cert.issuer}</p>
@@ -68,12 +68,12 @@ const Certifications = () => {
 
         {/* Certificate Gallery */}
         <div className="mt-12 py-8">
-          <h3 className="text-2xl font-bold text-purple-400 mb-6 text-center">Certificate Gallery</h3>
+          <h3 className="text-2xl font-bold text-cyan-400 mb-6 text-center">Certificate Gallery</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {certifications.map((cert, index) => (
               <div
                 key={index}
-                className="group relative overflow-hidden rounded-xl border border-purple-500/20 hover:border-purple-500/50 transition-all duration-300"
+                className="group relative overflow-hidden rounded-xl border border-cyan-500/20 hover:border-cyan-500/50 transition-all duration-300"
               >
                 <div className="aspect-[4/3] overflow-hidden">
                   <img
@@ -83,7 +83,7 @@ const Certifications = () => {
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                  <p className="text-xs font-bold text-purple-400 mb-1">{cert.issuer}</p>
+                  <p className="text-xs font-bold text-cyan-400 mb-1">{cert.issuer}</p>
                   <p className="text-sm text-white font-semibold line-clamp-2">{cert.title}</p>
                 </div>
               </div>
