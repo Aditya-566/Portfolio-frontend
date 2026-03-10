@@ -25,14 +25,14 @@ const Contact = () => {
     {
       icon: <HiPhone size={24} />,
       label: 'Phone',
-      value: '+91-9816511152',
-      action: 'tel:+919816511152',
+      value: '+91-9811152',
+      action: 'tel:+919811152',
     },
     {
-      icon: <SiWhatsApp size={24} />,
+      icon: <SiWhatsapp size={24} />,
       label: 'WhatsApp',
-      value: '+91-9816511152',
-      action: 'https://wa.me/919816511152',
+      value: '+91-9811152',
+      action: 'https://wa.me/919811152',
     },
   ]
 
@@ -55,7 +55,7 @@ const Contact = () => {
 
     const messageText = `Hello Aditya,\nName: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`
     const encodedMessage = encodeURIComponent(messageText)
-    const whatsappUrl = `https://wa.me/919816511152?text=${encodedMessage}`
+    const whatsappUrl = `https://wa.me/919811152?text=${encodedMessage}`
     
     window.open(whatsappUrl, '_blank')
   }
@@ -145,7 +145,7 @@ const Contact = () => {
               <p className="text-sm text-gray-400 mb-3">Follow me on social media:</p>
               <div className="flex gap-3">
                 <a
-                  href="https://www.linkedin.com/in/aditya566/"
+                  href="https://linkedin.com/in/ad-566"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-lg hover:bg-blue-500/40 transition-colors font-semibold"
@@ -153,7 +153,7 @@ const Contact = () => {
                   LinkedIn
                 </a>
                 <a
-                  href="https://github.com/Aditya-566"
+                  href="https://github.com/Ad-566"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 bg-gray-500/20 text-gray-300 rounded-lg hover:bg-gray-500/40 transition-colors font-semibold"
@@ -260,7 +260,7 @@ const Contact = () => {
               Email Me
             </a>
             <a
-              href="tel:+919816511152"
+              href="tel:+919811152"
               className="btn-secondary"
             >
               Call Me

@@ -6,13 +6,13 @@ const SocialLinks = () => {
   const socials = [
     {
       name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/aditya566/',
+      url: 'https://linkedin.com/in/ad-566',
       icon: <FaLinkedin size={24} />,
       color: 'hover:text-blue-400',
     },
     {
       name: 'GitHub',
-      url: 'https://github.com/Aditya-566',
+      url: 'https://github.com/Ad-566',
       icon: <FaGithub size={24} />,
       color: 'hover:text-gray-300',
     },
