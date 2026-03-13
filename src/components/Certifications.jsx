@@ -18,13 +18,6 @@ const Certifications = () => {
       image: '/images/certificates/dsa-cpp.jpg'
     },
     {
-      title: 'Cloud Computing',
-      issuer: 'NPTEL',
-      year: '2025',
-      icon: '☁️',
-      image: '/images/certificates/nptel.png'
-    },
-    {
       title: 'Excellent Python 3 Bootcamp',
       issuer: 'Udemy',
       year: '2023',

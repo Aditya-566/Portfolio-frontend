@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { HiMail, HiPhone, HiCheckCircle, HiExclamation } from 'react-icons/hi'
+import { HiMail, HiPhone, HiLocationMarker, HiCheckCircle, HiExclamation } from 'react-icons/hi'
 import { SiWhatsapp } from 'react-icons/si'
 import axios from 'axios'
 
@@ -25,14 +25,14 @@ const Contact = () => {
     {
       icon: <HiPhone size={24} />,
       label: 'Phone',
-      value: '+91-9816511152',
-      action: 'tel:+919816511152',
+      value: '+91-9811152',
+      action: 'tel:+919811152',
     },
     {
       icon: <SiWhatsapp size={24} />,
       label: 'WhatsApp',
-      value: '+91-9816511152',
-      action: 'https://wa.me/919816511152',
+      value: '+91-9811152',
+      action: 'https://wa.me/919811152',
     },
   ]
 
@@ -55,8 +55,8 @@ const Contact = () => {
 
     const messageText = `Hello Aditya,\nName: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`
     const encodedMessage = encodeURIComponent(messageText)
-    const whatsappUrl = `https://wa.me/919816511152?text=${encodedMessage}`
-
+    const whatsappUrl = `https://wa.me/919811152?text=${encodedMessage}`
+    
     window.open(whatsappUrl, '_blank')
   }
 
@@ -78,7 +78,7 @@ const Contact = () => {
 
     try {
       const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000'
-
+      
       const response = await axios.post(`${backendUrl}/api/contact`, {
         name: formData.name,
         email: formData.email,
@@ -111,14 +111,14 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="py-20 px-4">
+    <section id="contact" className="py-20 px-4 bg-slate-800/50">
       <div className="max-w-5xl mx-auto">
         <h2 className="section-title text-center mb-12">Get In Touch</h2>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-cyan-400 mb-6">Connect With Me</h3>
+            <h3 className="text-2xl font-bold text-purple-400 mb-6">Connect With Me</h3>
 
             {contactInfo.map((info, index) => (
               <a
@@ -126,14 +126,14 @@ const Contact = () => {
                 href={info.action}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 cursor-pointer"
+                className="card flex items-center gap-4 cursor-pointer"
               >
-                <div className="text-cyan-400 flex-shrink-0">
+                <div className="text-purple-400 flex-shrink-0">
                   {info.icon}
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">{info.label}</p>
-                  <p className="font-semibold text-gray-200 hover:text-cyan-300 transition-colors">
+                  <p className="font-semibold text-gray-200 hover:text-purple-300 transition-colors">
                     {info.value}
                   </p>
                 </div>
@@ -145,7 +145,7 @@ const Contact = () => {
               <p className="text-sm text-gray-400 mb-3">Follow me on social media:</p>
               <div className="flex gap-3">
                 <a
-                  href="https://www.linkedin.com/in/aditya566/"
+                  href="https://linkedin.com/in/ad-566"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-lg hover:bg-blue-500/40 transition-colors font-semibold"
@@ -153,7 +153,7 @@ const Contact = () => {
                   LinkedIn
                 </a>
                 <a
-                  href="https://github.com/Aditya-566"
+                  href="https://github.com/Ad-566"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 bg-gray-500/20 text-gray-300 rounded-lg hover:bg-gray-500/40 transition-colors font-semibold"
@@ -165,8 +165,8 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="">
-            <h3 className="text-2xl font-bold text-cyan-400 mb-6">Send a Message</h3>
+          <div className="card">
+            <h3 className="text-2xl font-bold text-purple-400 mb-6">Send a Message</h3>
             <form onSubmit={handleEmailSubmit} className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-300 mb-2">
@@ -178,7 +178,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleInputChange}
                   placeholder="Your Name"
-                  className="w-full px-4 py-2 bg-transparent border border-cyan-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition-colors"
+                  className="w-full px-4 py-2 bg-slate-700/50 border border-purple-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors"
                 />
               </div>
 
@@ -192,7 +192,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleInputChange}
                   placeholder="your@email.com"
-                  className="w-full px-4 py-2 bg-transparent border border-cyan-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition-colors"
+                  className="w-full px-4 py-2 bg-slate-700/50 border border-purple-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors"
                 />
               </div>
 
@@ -206,18 +206,19 @@ const Contact = () => {
                   onChange={handleInputChange}
                   placeholder="Your message..."
                   rows="5"
-                  className="w-full px-4 py-2 bg-slate-700/50 border border-cyan-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition-colors resize-none"
+                  className="w-full px-4 py-2 bg-slate-700/50 border border-purple-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors resize-none"
                 ></textarea>
               </div>
 
               {/* Status Message */}
               {status.message && (
-                <div className={`flex items-center gap-2 p-3 rounded-lg ${status.type === 'success'
+                <div className={`flex items-center gap-2 p-3 rounded-lg ${
+                  status.type === 'success'
                     ? 'bg-green-500/20 text-green-300'
                     : status.type === 'error'
-                      ? 'bg-red-500/20 text-red-300'
-                      : 'bg-blue-500/20 text-blue-300'
-                  }`}>
+                    ? 'bg-red-500/20 text-red-300'
+                    : 'bg-blue-500/20 text-blue-300'
+                }`}>
                   {status.type === 'success' && <HiCheckCircle size={20} />}
                   {status.type === 'error' && <HiExclamation size={20} />}
                   <span>{status.message}</span>
@@ -246,8 +247,8 @@ const Contact = () => {
         </div>
 
         {/* Additional Contact Methods */}
-        <div className="p-8 text-center">
-          <h3 className="text-xl font-bold text-cyan-400 mb-4">Prefer Direct Contact?</h3>
+        <div className="glass p-8 text-center">
+          <h3 className="text-xl font-bold text-purple-400 mb-4">Prefer Direct Contact?</h3>
           <p className="text-gray-300 mb-4">
             Feel free to reach out directly via email or phone. I usually respond within 24 hours!
           </p>
@@ -259,7 +260,7 @@ const Contact = () => {
               Email Me
             </a>
             <a
-              href="tel:+919816511152"
+              href="tel:+919811152"
               className="btn-secondary"
             >
               Call Me
