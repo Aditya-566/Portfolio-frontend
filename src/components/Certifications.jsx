@@ -22,7 +22,7 @@ const Certifications = () => {
       issuer: 'NPTEL',
       year: '2025',
       icon: '☁️',
-      image: '/images/certificates/cloud-computing.jpg'
+      image: '/images/certificates/nptel.png'
     },
     {
       title: 'Excellent Python 3 Bootcamp',

@@ -17,7 +17,7 @@ const Projects = () => {
       tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
       links: [
         { name: 'Live Demo', url: 'https://grievance-platform.vercel.app/' },
-        { name: 'GitHub', url: '#' },
+        
       ],
     },
     {
@@ -30,9 +30,9 @@ const Projects = () => {
         'Extracted product specifications and availability',
         'Optimized data analysis for faster recommendations',
       ],
-      tech: ['Python', 'BeautifulSoup', 'Scrapy', 'Data Analysis'],
+      tech: ['MERN', 'react js', 'ScraperAPI', 'SendGrid'],
       links: [
-        { name: 'GitHub', url: 'https://github.com/Aditya-566/Intelligent-Deal-Finder' },
+        { name: 'GitHub', url: 'https://intelligent-deal-finder-frontend.vercel.app/' },
       ],
     },
     {
@@ -50,7 +50,7 @@ const Projects = () => {
       tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB Atlas', 'Tailwind CSS'],
       links: [
         { name: 'Live Demo', url: 'https://smart-scheduler-fontend.vercel.app' },
-        { name: 'GitHub', url: '#' },
+       
       ],
     },
   ]
