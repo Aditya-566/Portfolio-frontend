@@ -6,15 +6,18 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        heading: ['Outfit', 'sans-serif'],
+      },
       colors: {
         gradient: {
-          from: '#06b6d4', // cyan-500
-          via: '#3b82f6',   // blue-500
-          to: '#2dd4bf',   // teal-400
+          from: '#10b981', // emerald-500
+          via: '#06b6d4',   // cyan-500
+          to: '#3b82f6',   // blue-500
         },
       },
       backgroundImage: {
-        'gradient-main': 'linear-gradient(135deg, #06b6d4 0%, #3b82f6 50%, #2dd4bf 100%)',
+        'gradient-main': 'linear-gradient(135deg, #10b981 0%, #06b6d4 50%, #3b82f6 100%)',
         'gradient-dark': 'linear-gradient(135deg, #000000 0%, #000000 100%)',
       },
       animation: {

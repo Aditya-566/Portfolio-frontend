@@ -118,7 +118,7 @@ const Contact = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-purple-400 mb-6">Connect With Me</h3>
+            <h3 className="text-2xl font-extrabold font-heading text-emerald-400 mb-6">Connect With Me</h3>
 
             {contactInfo.map((info, index) => (
               <a

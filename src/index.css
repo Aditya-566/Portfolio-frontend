@@ -27,7 +27,7 @@ body {
 }
 
 .gradient-text {
-  @apply bg-gradient-main bg-clip-text text-transparent;
+  @apply bg-gradient-main bg-clip-text text-transparent font-heading;
 }
 
 .btn-primary {
@@ -39,7 +39,7 @@ body {
 }
 
 .section-title {
-  @apply text-4xl md:text-5xl font-bold gradient-text mb-4;
+  @apply text-4xl md:text-5xl font-extrabold gradient-text mb-4;
 }
 
 .card {
