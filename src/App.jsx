@@ -32,7 +32,7 @@ function App() {
 
   return (
     <div className={isDark ? 'dark' : ''}>
-      <div className={`${isDark ? 'bg-black text-white' : 'bg-white text-gray-900'} transition-colors duration-300 min-h-screen relative`}>
+      <div className={`${isDark ? 'bg-[#0a0a0a] text-gray-200' : 'bg-white text-gray-900'} transition-colors duration-300 min-h-screen relative`}>
         <div className="spotlight"></div>
         <Navbar isDark={isDark} setIsDark={setIsDark} />
         <Hero />

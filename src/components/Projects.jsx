@@ -70,15 +70,15 @@ const Projects = () => {
                 <h3 className="text-xl md:text-2xl font-bold text-cyan-400 mb-2">
                   {project.title}
                 </h3>
-                <p className="text-sm text-gray-400 mb-4 font-semibold">{project.duration}</p>
-                <p className="text-gray-300 mb-4">{project.description}</p>
+                <p className="text-sm text-gray-300 mb-4 font-bold">{project.duration}</p>
+                <p className="text-gray-200 font-medium mb-4">{project.description}</p>
 
                 <div className="mb-4">
-                  <h4 className="font-semibold text-cyan-300 mb-2">Key Responsibilities:</h4>
-                  <ul className="text-sm text-gray-300 space-y-1">
+                  <h4 className="font-bold text-cyan-300 mb-2">Key Responsibilities:</h4>
+                  <ul className="text-sm text-gray-200 font-medium space-y-1">
                     {project.responsibilities.map((resp, idx) => (
                       <li key={idx} className="flex items-start gap-2">
-                        <span className="text-cyan-400">•</span>
+                        <span className="text-cyan-400 font-bold">•</span>
                         <span>{resp}</span>
                       </li>
                     ))}

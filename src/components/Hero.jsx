@@ -35,7 +35,7 @@ const Hero = () => {
         </p>
 
         {/* Tagline */}
-        <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto font-medium">
           "I build scalable web applications and intelligent software solutions."
         </p>
 

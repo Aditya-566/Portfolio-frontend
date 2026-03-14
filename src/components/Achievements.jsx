@@ -54,26 +54,26 @@ const Achievements = () => {
           <h3 className="text-2xl font-bold text-cyan-400 mb-6 flex items-center gap-2">
             Highlights
           </h3>
-          <ul className="space-y-4">
+          <ul className="space-y-4 font-medium">
             <li className="flex items-start gap-3">
-              <span className="text-cyan-400 mt-1">✓</span>
-              <span className="text-gray-300">Active open-source contributor with consistent GitHub activity</span>
+              <span className="text-cyan-400 mt-1 font-bold">✓</span>
+              <span className="text-gray-200">Active open-source contributor with consistent GitHub activity</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-cyan-400 mt-1">✓</span>
-              <span className="text-gray-300">Successfully deployed multiple applications on Vercel and Render</span>
+              <span className="text-cyan-400 mt-1 font-bold">✓</span>
+              <span className="text-gray-200">Successfully deployed multiple applications on Vercel and Render</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-cyan-400 mt-1">✓</span>
-              <span className="text-gray-300">Strong problem-solving skills with focus on clean, maintainable code</span>
+              <span className="text-cyan-400 mt-1 font-bold">✓</span>
+              <span className="text-gray-200">Strong problem-solving skills with focus on clean, maintainable code</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-cyan-400 mt-1">✓</span>
-              <span className="text-gray-300">Passionate about learning new technologies and best practices</span>
+              <span className="text-cyan-400 mt-1 font-bold">✓</span>
+              <span className="text-gray-200">Passionate about learning new technologies and best practices</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-cyan-400 mt-1">✓</span>
-              <span className="text-gray-300">Collaborative team player with excellent communication skills</span>
+              <span className="text-cyan-400 mt-1 font-bold">✓</span>
+              <span className="text-gray-200">Collaborative team player with excellent communication skills</span>
             </li>
           </ul>
         </div>
