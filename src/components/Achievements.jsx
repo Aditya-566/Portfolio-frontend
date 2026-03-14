@@ -26,7 +26,7 @@ const Achievements = () => {
   ]
 
   return (
-    <section id="achievements" className="py-20 px-4">
+    <section id="achievements" className="py-20 px-4 bg-blue-50">
       <div className="max-w-5xl mx-auto">
         <h2 className="section-title text-center mb-12">Achievements</h2>
 
@@ -34,46 +34,47 @@ const Achievements = () => {
           {achievements.map((achievement, index) => (
             <div
               key={index}
-              className="flex items-center gap-6 group"
+              className="flex items-center gap-6 group p-6 bg-white border border-slate-200 rounded-xl hover:shadow-lg transition-all duration-300"
             >
               <div className="flex-1">
-                <div className="text-3xl font-bold gradient-text mb-1">
+                <div className="text-4xl font-bold text-blue-700 mb-1">
                   {achievement.metric}
                 </div>
-                <h3 className="text-lg font-semibold text-gray-200 mb-1 group-hover:text-cyan-300 transition-colors">
+                <h3 className="text-lg font-semibold text-slate-900 mb-1 group-hover:text-blue-700 transition-colors">
                   {achievement.description}
                 </h3>
-                <p className="text-sm text-gray-400">{achievement.details}</p>
+                <p className="text-sm text-slate-600">{achievement.details}</p>
               </div>
             </div>
           ))}
         </div>
 
         {/* Additional Highlights */}
-        <div className="p-8">
-          <h3 className="text-2xl font-bold text-cyan-400 mb-6 flex items-center gap-2">
+        <div className="p-8 bg-white rounded-xl border border-slate-200">
+          <h3 className="text-2xl font-bold text-blue-700 mb-6 flex items-center gap-2">
+            <HiTrendingUp className="text-blue-600" />
             Highlights
           </h3>
           <ul className="space-y-4 font-medium">
             <li className="flex items-start gap-3">
-              <span className="text-cyan-400 mt-1 font-bold">✓</span>
-              <span className="text-gray-200">Active open-source contributor with consistent GitHub activity</span>
+              <span className="text-emerald-500 mt-1 font-bold text-lg">✓</span>
+              <span className="text-slate-700">Active open-source contributor with consistent GitHub activity</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-cyan-400 mt-1 font-bold">✓</span>
-              <span className="text-gray-200">Successfully deployed multiple applications on Vercel and Render</span>
+              <span className="text-emerald-500 mt-1 font-bold text-lg">✓</span>
+              <span className="text-slate-700">Successfully deployed multiple applications on Vercel and Render</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-cyan-400 mt-1 font-bold">✓</span>
-              <span className="text-gray-200">Strong problem-solving skills with focus on clean, maintainable code</span>
+              <span className="text-emerald-500 mt-1 font-bold text-lg">✓</span>
+              <span className="text-slate-700">Strong problem-solving skills with focus on clean, maintainable code</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-cyan-400 mt-1 font-bold">✓</span>
-              <span className="text-gray-200">Passionate about learning new technologies and best practices</span>
+              <span className="text-emerald-500 mt-1 font-bold text-lg">✓</span>
+              <span className="text-slate-700">Passionate about learning new technologies and best practices</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-cyan-400 mt-1 font-bold">✓</span>
-              <span className="text-gray-200">Collaborative team player with excellent communication skills</span>
+              <span className="text-emerald-500 mt-1 font-bold text-lg">✓</span>
+              <span className="text-slate-700">Collaborative team player with excellent communication skills</span>
             </li>
           </ul>
         </div>

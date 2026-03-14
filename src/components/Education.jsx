@@ -27,7 +27,7 @@ const Education = () => {
   ]
 
   return (
-    <section id="education" className="py-20 px-4">
+    <section id="education" className="py-20 px-4 bg-white">
       <div className="max-w-4xl mx-auto">
         <h2 className="section-title text-center mb-12">Education</h2>
 
@@ -35,34 +35,34 @@ const Education = () => {
           {education.map((edu, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden"
+              className="group relative overflow-hidden border border-slate-200 rounded-xl hover:border-blue-400 hover:shadow-lg transition-all duration-300 p-6 bg-white"
             >
               {/* Background gradient on hover */}
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/0 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/0 to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               
               <div className="relative">
                 <div className="flex items-start gap-4 mb-4">
-                  <div>
-                    <h3 className="text-2xl font-bold text-cyan-400 group-hover:text-cyan-300 transition-colors">
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-blue-700 group-hover:text-blue-600 transition-colors">
                       {edu.degree}
                     </h3>
-                    <p className="text-lg font-semibold text-gray-200">{edu.field}</p>
+                    <p className="text-lg font-semibold text-slate-700">{edu.field}</p>
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <p className="flex items-center gap-2 text-gray-300">
-                    <HiLocationMarker className="text-cyan-400 flex-shrink-0" />
+                  <p className="flex items-center gap-2 text-slate-700">
+                    <HiLocationMarker className="text-blue-600 flex-shrink-0" />
                     {edu.institution}
                   </p>
-                  <p className="text-sm text-gray-400">{edu.period}</p>
+                  <p className="text-sm text-slate-600">{edu.period}</p>
                   {edu.cgpa && (
-                    <p className="inline-block px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm font-semibold">
+                    <p className="inline-block px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-sm font-semibold">
                       CGPA: {edu.cgpa}
                     </p>
                   )}
                   {edu.percentage && (
-                    <p className="inline-block px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-semibold">
+                    <p className="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">
                       {edu.percentage}
                     </p>
                   )}
@@ -73,14 +73,15 @@ const Education = () => {
         </div>
 
         {/* Timeline */}
-        <div className="mt-12 p-8">
-          <h3 className="text-2xl font-bold text-cyan-400 mb-8 flex items-center gap-2">
+        <div className="mt-12 p-8 bg-slate-50 rounded-xl border border-slate-200">
+          <h3 className="text-2xl font-bold text-blue-700 mb-8 flex items-center gap-2">
+            <HiAcademicCap className="text-blue-600" />
             Academic Timeline
           </h3>
           
           <div className="relative">
             {/* Vertical line */}
-            <div className="absolute left-4 md:left-0 top-0 bottom-0 w-1 bg-gradient-main ml-4 md:ml-8"></div>
+            <div className="absolute left-4 md:left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-600 to-cyan-600 ml-4 md:ml-8"></div>
 
             {/* Timeline items */}
             <div className="space-y-8 pl-12 md:pl-16">
@@ -92,12 +93,12 @@ const Education = () => {
                 { year: '2025', label: 'Multiple Certifications & Projects' },
               ].map((item, idx) => (
                 <div key={idx} className="flex items-center">
-                  <div className="absolute left-0 w-8 h-8 bg-gradient-main rounded-full flex items-center justify-center md:left-4">
-                    <div className="w-4 h-4 bg-slate-900 rounded-full"></div>
+                  <div className="absolute left-0 w-8 h-8 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full flex items-center justify-center md:left-4">
+                    <div className="w-4 h-4 bg-white rounded-full"></div>
                   </div>
                   <div className="ml-4">
-                    <span className="text-cyan-400 font-bold">{item.year}</span>
-                    <p className="text-gray-300">{item.label}</p>
+                    <span className="text-blue-700 font-bold">{item.year}</span>
+                    <p className="text-slate-700">{item.label}</p>
                   </div>
                 </div>
               ))}

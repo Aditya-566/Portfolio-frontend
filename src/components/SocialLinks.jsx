@@ -8,19 +8,19 @@ const SocialLinks = () => {
       name: 'LinkedIn',
       url: 'https://www.linkedin.com/in/aditya566/',
       icon: <FaLinkedin size={24} />,
-      color: 'hover:text-blue-400',
+      color: 'hover:text-blue-700',
     },
     {
       name: 'GitHub',
       url: 'https://github.com/Aditya-566',
       icon: <FaGithub size={24} />,
-      color: 'hover:text-gray-300',
+      color: 'hover:text-slate-700',
     },
     {
       name: 'Email',
       url: 'mailto:aditya566sharma@gmail.com',
       icon: <HiOutlineEnvelope size={24} />,
-      color: 'hover:text-red-400',
+      color: 'hover:text-cyan-600',
     },
   ];
 
@@ -32,7 +32,7 @@ const SocialLinks = () => {
           href={social.url}
           target="_blank"
           rel="noopener noreferrer"
-          className={`text-gray-300 ${social.color} transition-all duration-300 transform hover:scale-125`}
+          className={`text-slate-700 ${social.color} transition-all duration-300 transform hover:scale-125`}
           title={social.name}
         >
           {social.icon}

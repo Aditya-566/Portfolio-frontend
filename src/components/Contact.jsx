@@ -111,14 +111,14 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="py-20 px-4 bg-slate-800/50">
+    <section id="contact" className="py-20 px-4 bg-white">
       <div className="max-w-5xl mx-auto">
         <h2 className="section-title text-center mb-12">Get In Touch</h2>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-extrabold font-heading text-emerald-400 mb-6">Connect With Me</h3>
+            <h3 className="text-2xl font-extrabold text-blue-700 mb-6">Connect With Me</h3>
 
             {contactInfo.map((info, index) => (
               <a
@@ -126,14 +126,14 @@ const Contact = () => {
                 href={info.action}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="card flex items-center gap-4 cursor-pointer"
+                className="card flex items-center gap-4 cursor-pointer border border-slate-200 bg-white hover:border-blue-400"
               >
-                <div className="text-purple-400 flex-shrink-0">
+                <div className="text-blue-600 flex-shrink-0">
                   {info.icon}
                 </div>
                 <div>
-                  <p className="text-sm text-gray-400">{info.label}</p>
-                  <p className="font-semibold text-gray-200 hover:text-purple-300 transition-colors">
+                  <p className="text-sm text-slate-600">{info.label}</p>
+                  <p className="font-semibold text-slate-900 hover:text-blue-700 transition-colors">
                     {info.value}
                   </p>
                 </div>
@@ -142,13 +142,13 @@ const Contact = () => {
 
             {/* Social Links */}
             <div className="pt-4">
-              <p className="text-sm text-gray-400 mb-3">Follow me on social media:</p>
+              <p className="text-sm text-slate-600 mb-3">Follow me on social media:</p>
               <div className="flex gap-3">
                 <a
                   href="https://www.linkedin.com/in/aditya566/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-lg hover:bg-blue-500/40 transition-colors font-semibold"
+                  className="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-colors font-semibold"
                 >
                   LinkedIn
                 </a>
@@ -156,7 +156,7 @@ const Contact = () => {
                   href="https://github.com/Aditya-566"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 bg-gray-500/20 text-gray-300 rounded-lg hover:bg-gray-500/40 transition-colors font-semibold"
+                  className="px-4 py-2 bg-slate-200 text-slate-700 rounded-lg hover:bg-slate-300 transition-colors font-semibold"
                 >
                   GitHub
                 </a>
@@ -165,11 +165,11 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="card">
-            <h3 className="text-2xl font-bold text-purple-400 mb-6">Send a Message</h3>
+          <div className="card border border-slate-200 bg-white">
+            <h3 className="text-2xl font-bold text-blue-700 mb-6">Send a Message</h3>
             <form onSubmit={handleEmailSubmit} className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">
+                <label className="block text-sm font-medium text-slate-700 mb-2">
                   Name
                 </label>
                 <input
@@ -178,12 +178,12 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleInputChange}
                   placeholder="Your Name"
-                  className="w-full px-4 py-2 bg-slate-700/50 border border-purple-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors"
+                  className="w-full px-4 py-2 bg-white border border-slate-300 rounded-lg text-slate-900 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">
+                <label className="block text-sm font-medium text-slate-700 mb-2">
                   Email
                 </label>
                 <input
@@ -192,12 +192,12 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleInputChange}
                   placeholder="your@email.com"
-                  className="w-full px-4 py-2 bg-slate-700/50 border border-purple-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors"
+                  className="w-full px-4 py-2 bg-white border border-slate-300 rounded-lg text-slate-900 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">
+                <label className="block text-sm font-medium text-slate-700 mb-2">
                   Message
                 </label>
                 <textarea
@@ -206,7 +206,7 @@ const Contact = () => {
                   onChange={handleInputChange}
                   placeholder="Your message..."
                   rows="5"
-                  className="w-full px-4 py-2 bg-slate-700/50 border border-purple-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors resize-none"
+                  className="w-full px-4 py-2 bg-white border border-slate-300 rounded-lg text-slate-900 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors resize-none"
                 ></textarea>
               </div>
 
@@ -214,10 +214,10 @@ const Contact = () => {
               {status.message && (
                 <div className={`flex items-center gap-2 p-3 rounded-lg ${
                   status.type === 'success'
-                    ? 'bg-green-500/20 text-green-300'
+                    ? 'bg-emerald-100 text-emerald-700'
                     : status.type === 'error'
-                    ? 'bg-red-500/20 text-red-300'
-                    : 'bg-blue-500/20 text-blue-300'
+                    ? 'bg-red-100 text-red-700'
+                    : 'bg-blue-100 text-blue-700'
                 }`}>
                   {status.type === 'success' && <HiCheckCircle size={20} />}
                   {status.type === 'error' && <HiExclamation size={20} />}
@@ -237,7 +237,7 @@ const Contact = () => {
                 <button
                   type="button"
                   onClick={handleWhatsApp}
-                  className="px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 flex-1"
+                  className="px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 flex-1"
                 >
                   💬 WhatsApp
                 </button>
@@ -247,9 +247,9 @@ const Contact = () => {
         </div>
 
         {/* Additional Contact Methods */}
-        <div className="glass p-8 text-center">
-          <h3 className="text-xl font-bold text-purple-400 mb-4">Prefer Direct Contact?</h3>
-          <p className="text-gray-300 mb-4">
+        <div className="glass p-8 text-center bg-white border border-slate-200">
+          <h3 className="text-xl font-bold text-blue-700 mb-4">Prefer Direct Contact?</h3>
+          <p className="text-slate-700 mb-4">
             Feel free to reach out directly via email or phone. I usually respond within 24 hours!
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">

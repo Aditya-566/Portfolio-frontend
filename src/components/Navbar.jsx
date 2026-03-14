@@ -49,7 +49,7 @@ const Navbar = ({ isDark, setIsDark }) => {
   return (
     <nav className={`fixed w-full top-0 z-50 transition-all duration-500 ${
       scrolled 
-        ? (isDark ? 'bg-black/80 backdrop-blur-lg border-b border-purple-500/30 py-2' : 'bg-white/90 backdrop-blur-md border-b border-gray-200 py-2')
+        ? (isDark ? 'bg-slate-900/90 backdrop-blur-lg border-b border-slate-700 py-2' : 'bg-white/95 backdrop-blur-md border-b border-slate-200 py-2 shadow-sm')
         : 'bg-transparent py-4'
     }`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -62,7 +62,7 @@ const Navbar = ({ isDark, setIsDark }) => {
           >
             <span 
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className="gradient-text text-3xl font-extrabold cursor-pointer tracking-tighter"
+              className={`text-3xl font-extrabold cursor-pointer tracking-tighter ${isDark ? 'text-white' : 'text-blue-700'}`}
             >
               AS
             </span>
@@ -78,10 +78,10 @@ const Navbar = ({ isDark, setIsDark }) => {
                 animate="visible"
                 variants={navVariants}
                 onClick={() => scrollToSection(link)}
-                className={`relative group ${isDark ? 'text-gray-200 hover:text-purple-400' : 'text-gray-700 hover:text-purple-600'} font-semibold transition-colors duration-300`}
+                className={`relative group ${isDark ? 'text-gray-200 hover:text-blue-400' : 'text-slate-700 hover:text-blue-600'} font-semibold transition-colors duration-300`}
               >
                 {link}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-500 transition-all duration-300 group-hover:w-full"></span>
               </motion.button>
             ))}
             <motion.button
@@ -89,7 +89,7 @@ const Navbar = ({ isDark, setIsDark }) => {
               animate={{ scale: 1 }}
               transition={{ delay: 0.6, type: "spring", stiffness: 260, damping: 20 }}
               onClick={() => setIsDark(!isDark)}
-              className={`p-2.5 rounded-xl ${isDark ? 'bg-purple-500/10 text-yellow-400 border border-purple-500/20' : 'bg-gray-100 text-gray-800 border border-gray-200'} hover:scale-110 transition-all duration-300 shadow-lg`}
+              className={`p-2.5 rounded-xl ${isDark ? 'bg-blue-500/10 text-amber-400 border border-blue-500/20' : 'bg-slate-100 text-slate-700 border border-slate-300'} hover:scale-110 transition-all duration-300 shadow-lg`}
             >
               {isDark ? <HiSun size={22} /> : <HiMoon size={22} />}
             </motion.button>
@@ -99,13 +99,13 @@ const Navbar = ({ isDark, setIsDark }) => {
           <div className="md:hidden flex items-center space-x-4">
             <button
               onClick={() => setIsDark(!isDark)}
-              className={`p-2 rounded-lg ${isDark ? 'bg-purple-500/20 text-yellow-400' : 'bg-gray-200 text-gray-800'}`}
+              className={`p-2 rounded-lg ${isDark ? 'bg-blue-500/20 text-amber-400' : 'bg-slate-200 text-slate-700'}`}
             >
               {isDark ? <HiSun size={20} /> : <HiMoon size={20} />}
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`text-3xl transition-transform duration-300 ${isOpen ? 'rotate-90 text-purple-500' : 'text-gray-400'}`}
+              className={`text-3xl transition-transform duration-300 ${isOpen ? 'rotate-90 text-blue-500' : 'text-slate-400'}`}
             >
               {isOpen ? <HiX /> : <HiMenu />}
             </button>
@@ -128,7 +128,7 @@ const Navbar = ({ isDark, setIsDark }) => {
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: i * 0.05 }}
                   onClick={() => scrollToSection(link)}
-                  className={`block w-full text-left px-5 py-3 rounded-xl font-medium ${isDark ? 'text-gray-300 hover:bg-purple-500/10 hover:text-purple-400' : 'text-gray-600 hover:bg-gray-50 hover:text-purple-600'} transition-all duration-300`}
+                  className={`block w-full text-left px-5 py-3 rounded-xl font-medium ${isDark ? 'text-gray-300 hover:bg-blue-500/10 hover:text-blue-400' : 'text-slate-600 hover:bg-slate-100 hover:text-blue-600'} transition-all duration-300`}
                 >
                   {link}
                 </motion.button>

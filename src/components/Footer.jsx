@@ -17,24 +17,24 @@ const Footer = () => {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="bg-slate-900 border-t border-cyan-500/20 py-12 px-4">
+    <footer className="bg-slate-100 border-t border-slate-300 py-12 px-4">
       <div className="max-w-5xl mx-auto">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="gradient-text text-2xl font-bold mb-2">Aditya Sharma</h3>
-            <p className="text-gray-400 text-sm">Full Stack Developer | MERN Stack Specialist</p>
+            <h3 className="text-blue-700 text-2xl font-bold mb-2 font-heading">Aditya Sharma</h3>
+            <p className="text-slate-600 text-sm">Full Stack Developer | MERN Stack Specialist</p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-cyan-400 font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-blue-700 font-semibold mb-4">Quick Links</h4>
             <div className="flex flex-wrap gap-2">
               {footerLinks.map((link) => (
                 <button
                   key={link.name}
                   onClick={() => scrollToSection(link.id)}
-                  className="text-gray-400 hover:text-cyan-400 transition-colors text-sm"
+                  className="text-slate-600 hover:text-blue-700 transition-colors text-sm"
                 >
                   {link.name}
                 </button>
@@ -44,15 +44,15 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="text-cyan-400 font-semibold mb-4">Contact</h4>
+            <h4 className="text-blue-700 font-semibold mb-4">Contact</h4>
             <div className="space-y-2 text-sm">
-              <p className="text-gray-400">
-                <a href="mailto:aditya566sharma@gmail.com" className="hover:text-cyan-400 transition-colors">
+              <p className="text-slate-600">
+                <a href="mailto:aditya566sharma@gmail.com" className="hover:text-blue-700 transition-colors">
                   aditya566sharma@gmail.com
                 </a>
               </p>
-              <p className="text-gray-400">
-                <a href="tel:+919816511152" className="hover:text-cyan-400 transition-colors">
+              <p className="text-slate-600">
+                <a href="tel:+919816511152" className="hover:text-blue-700 transition-colors">
                   +91-9816511152
                 </a>
               </p>
@@ -61,10 +61,10 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="h-px bg-gradient-to-r from-transparent via-cyan-500 to-transparent mb-8"></div>
+        <div className="h-px bg-gradient-to-r from-transparent via-blue-400 to-transparent mb-8"></div>
 
         {/* Bottom */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-600">
           <p className="flex items-center gap-2">
             © {year} Aditya Sharma | Designed with
             <HiHeart className="text-red-500" size={16} />
@@ -75,7 +75,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/aditya566/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-cyan-400 transition-colors"
+              className="hover:text-blue-700 transition-colors"
             >
               LinkedIn
             </a>

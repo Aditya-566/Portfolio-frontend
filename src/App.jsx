@@ -11,7 +11,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 function App() {
-  const [isDark, setIsDark] = useState(true)
+  const [isDark, setIsDark] = useState(false)
 
   useEffect(() => {
     if (isDark) {
@@ -32,7 +32,7 @@ function App() {
 
   return (
     <div className={isDark ? 'dark' : ''}>
-      <div className={`${isDark ? 'bg-[#0a0a0a] text-gray-200' : 'bg-white text-gray-900'} transition-colors duration-300 min-h-screen relative`}>
+      <div className={`${isDark ? 'bg-slate-900 text-gray-100' : 'bg-white text-slate-900'} transition-colors duration-300 min-h-screen relative`}>
         <div className="spotlight"></div>
         <Navbar isDark={isDark} setIsDark={setIsDark} />
         <Hero />

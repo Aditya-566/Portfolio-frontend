@@ -41,24 +41,24 @@ const Certifications = () => {
   ]
 
   return (
-    <section id="certifications" className="py-20 px-4">
+    <section id="certifications" className="py-20 px-4 bg-gradient-to-b from-white to-slate-100">
       <div className="max-w-4xl mx-auto">
-        <h2 className="section-title text-center mb-12">Certifications</h2>
+        <h2 className="section-title text-center mb-12">Certifications & Awards</h2>
 
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="grid md:grid-cols-2 gap-6">
           {certifications.map((cert, index) => (
             <div
               key={index}
-              className="card flex items-start gap-4 group"
+              className="card flex items-start gap-4 group border-l-4 border-blue-600"
             >
               <div className="text-3xl flex-shrink-0">{cert.icon}</div>
               <div className="flex-1">
-                <h3 className="font-bold text-lg text-cyan-400 mb-1 group-hover:text-cyan-300 transition-colors">
+                <h3 className="font-bold text-lg text-blue-700 mb-1 group-hover:text-blue-600 transition-colors">
                   {cert.title}
                 </h3>
-                <p className="text-sm text-gray-400 mb-1">{cert.issuer}</p>
-                <p className="text-xs text-gray-500 flex items-center gap-1">
-                  <HiCheckCircle className="text-green-400" size={14} />
+                <p className="text-sm text-slate-600 mb-1 font-medium">{cert.issuer}</p>
+                <p className="text-xs text-slate-500 flex items-center gap-1">
+                  <HiCheckCircle className="text-emerald-500" size={14} />
                   {cert.year}
                 </p>
               </div>
@@ -67,13 +67,13 @@ const Certifications = () => {
         </div>
 
         {/* Certificate Gallery */}
-        <div className="mt-12 py-8">
-          <h3 className="text-2xl font-bold text-cyan-400 mb-6 text-center">Certificate Gallery</h3>
+        <div className="mt-16 py-8">
+          <h3 className="text-3xl font-bold text-slate-900 mb-8 text-center">Certificate Gallery</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {certifications.map((cert, index) => (
               <div
                 key={index}
-                className="group relative overflow-hidden rounded-xl border border-cyan-500/20 hover:border-cyan-500/50 transition-all duration-300"
+                className="group relative overflow-hidden rounded-xl border-2 border-slate-200 hover:border-blue-500 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="aspect-[4/3] overflow-hidden">
                   <img
@@ -82,8 +82,8 @@ const Certifications = () => {
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                  <p className="text-xs font-bold text-cyan-400 mb-1">{cert.issuer}</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-800/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                  <p className="text-xs font-bold text-blue-300 mb-1">{cert.issuer}</p>
                   <p className="text-sm text-white font-semibold line-clamp-2">{cert.title}</p>
                 </div>
               </div>
