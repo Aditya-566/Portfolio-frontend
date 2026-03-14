@@ -9,7 +9,6 @@ const Education = () => {
       institution: 'Lovely Professional University, Punjab, India',
       period: 'Since Aug 2023',
       cgpa: '7.05',
-      icon: '🎓',
     },
     {
       degree: 'Intermediate (12th Grade)',
@@ -17,7 +16,6 @@ const Education = () => {
       institution: 'Kendriya Vidyalaya Bangana, Himachal Pradesh',
       period: '2022 – 2023',
       percentage: '82%',
-      icon: '📚',
     },
     {
       degree: 'Matriculation (10th Grade)',
@@ -25,7 +23,6 @@ const Education = () => {
       institution: 'Kendriya Vidyalaya Bangana, Himachal Pradesh',
       period: '2020 – 2021',
       percentage: '68%',
-      icon: '📖',
     },
   ]
 
@@ -45,7 +42,6 @@ const Education = () => {
               
               <div className="relative">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="text-4xl flex-shrink-0">{edu.icon}</div>
                   <div>
                     <h3 className="text-2xl font-bold text-cyan-400 group-hover:text-cyan-300 transition-colors">
                       {edu.degree}
@@ -79,7 +75,6 @@ const Education = () => {
         {/* Timeline */}
         <div className="mt-12 p-8">
           <h3 className="text-2xl font-bold text-cyan-400 mb-8 flex items-center gap-2">
-            <HiAcademicCap />
             Academic Timeline
           </h3>
           

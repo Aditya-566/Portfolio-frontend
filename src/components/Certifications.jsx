@@ -4,6 +4,13 @@ import { HiAcademicCap, HiCheckCircle } from 'react-icons/hi'
 const Certifications = () => {
   const certifications = [
     {
+      title: 'Cloud Computing',
+      issuer: 'NPTEL',
+      year: '2024',
+      icon: '☁️',
+      image: '/images/certificates/nptel-cloud.jpg'
+    },
+    {
       title: 'Build Generative AI Apps and Solutions with No-Code Tools',
       issuer: 'Infosys',
       year: '2025',

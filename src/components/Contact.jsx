@@ -25,14 +25,14 @@ const Contact = () => {
     {
       icon: <HiPhone size={24} />,
       label: 'Phone',
-      value: '+91-9811152',
-      action: 'tel:+919811152',
+      value: '+91-9816511152',
+      action: 'tel:+919816511152',
     },
     {
       icon: <SiWhatsapp size={24} />,
       label: 'WhatsApp',
-      value: '+91-9811152',
-      action: 'https://wa.me/919811152',
+      value: '+91-9816511152',
+      action: 'https://wa.me/919816511152',
     },
   ]
 
@@ -55,7 +55,7 @@ const Contact = () => {
 
     const messageText = `Hello Aditya,\nName: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`
     const encodedMessage = encodeURIComponent(messageText)
-    const whatsappUrl = `https://wa.me/919811152?text=${encodedMessage}`
+    const whatsappUrl = `https://wa.me/919816511152?text=${encodedMessage}`
     
     window.open(whatsappUrl, '_blank')
   }
@@ -260,7 +260,7 @@ const Contact = () => {
               Email Me
             </a>
             <a
-              href="tel:+919811152"
+              href="tel:+919816511152"
               className="btn-secondary"
             >
               Call Me

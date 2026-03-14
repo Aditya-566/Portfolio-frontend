@@ -7,25 +7,21 @@ const Achievements = () => {
       metric: '250+',
       description: 'GitHub Contributions',
       details: 'Features, bug fixes, refactoring, and documentation improvements',
-      icon: '🔥',
     },
     {
       metric: '10+',
       description: 'Full-Stack Projects',
       details: 'Built and deployed scalable web applications',
-      icon: '🚀',
     },
     {
       metric: '5+',
       description: 'Certifications',
       details: 'From leading platforms and universities',
-      icon: '🎓',
     },
     {
       metric: '100%',
       description: 'Open Source Contributor',
       details: 'Active collaborator on community projects',
-      icon: '🤝',
     },
   ]
 
@@ -40,7 +36,6 @@ const Achievements = () => {
               key={index}
               className="flex items-center gap-6 group"
             >
-              <div className="text-5xl flex-shrink-0">{achievement.icon}</div>
               <div className="flex-1">
                 <div className="text-3xl font-bold gradient-text mb-1">
                   {achievement.metric}
@@ -57,7 +52,6 @@ const Achievements = () => {
         {/* Additional Highlights */}
         <div className="p-8">
           <h3 className="text-2xl font-bold text-cyan-400 mb-6 flex items-center gap-2">
-            <HiStar className="text-yellow-400" />
             Highlights
           </h3>
           <ul className="space-y-4">

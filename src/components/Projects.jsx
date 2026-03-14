@@ -32,7 +32,7 @@ const Projects = () => {
       ],
       tech: ['MERN', 'react js', 'ScraperAPI', 'SendGrid'],
       links: [
-        { name: 'GitHub', url: 'https://intelligent-deal-finder-frontend.vercel.app/' },
+        { name: 'Live Demo', url: 'https://intelligent-deal-finder-frontend.vercel.app/' },
       ],
     },
     {
