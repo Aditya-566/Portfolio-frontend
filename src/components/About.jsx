@@ -21,19 +21,19 @@ const About = () => {
 
           <div className="grid md:grid-cols-2 gap-6 mt-8">
             <div className="bg-blue-50 border border-blue-200 p-4 rounded-lg hover:shadow-md transition-shadow">
-              <h3 className="text-blue-700 font-semibold mb-2">🎓 Education</h3>
+              <h3 className="text-blue-700 font-semibold mb-2">Education</h3>
               <p className="text-slate-700">BTech CSE at Lovely Professional University (Since Aug 2023)</p>
             </div>
             <div className="bg-blue-50 border border-blue-200 p-4 rounded-lg hover:shadow-md transition-shadow">
-              <h3 className="text-blue-700 font-semibold mb-2">💼 Focus</h3>
+              <h3 className="text-blue-700 font-semibold mb-2">Focus</h3>
               <p className="text-slate-700">Full-Stack Development & Backend Systems</p>
             </div>
             <div className="bg-blue-50 border border-blue-200 p-4 rounded-lg hover:shadow-md transition-shadow">
-              <h3 className="text-blue-700 font-semibold mb-2">🚀 Passion</h3>
+              <h3 className="text-blue-700 font-semibold mb-2">Passion</h3>
               <p className="text-slate-700">Building scalable applications & solving complex problems</p>
             </div>
             <div className="bg-blue-50 border border-blue-200 p-4 rounded-lg hover:shadow-md transition-shadow">
-              <h3 className="text-blue-700 font-semibold mb-2">🤝 Collaboration</h3>
+              <h3 className="text-blue-700 font-semibold mb-2">Collaboration</h3>
               <p className="text-slate-700">Open-source contributions & team projects</p>
             </div>
           </div>

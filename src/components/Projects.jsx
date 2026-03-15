@@ -5,7 +5,7 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: '🔗 GrievLink — Grievance Redressal Platform',
+      title: 'GrievLink — Grievance Redressal Platform',
       duration: 'Jun 2025 – Jul 2025',
       description: 'Built a full-stack grievance management system enabling seamless communication between users and authorities.',
       responsibilities: [
@@ -22,7 +22,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: '🛍️ Intelligent Deal Finder',
+      title: 'Intelligent Deal Finder',
       duration: 'Jan 2025 – May 2025',
       description: 'Developed an intelligent price comparison engine that recommends the best e-commerce deals.',
       responsibilities: [
@@ -37,7 +37,7 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: '🎓 Smart Classroom & Timetable Scheduler',
+      title: 'Smart Classroom & Timetable Scheduler',
       duration: 'Ongoing',
       description: 'Designed an automated academic timetable scheduling system with intelligent conflict detection.',
       responsibilities: [
