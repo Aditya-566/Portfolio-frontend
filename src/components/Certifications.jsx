@@ -7,35 +7,30 @@ const Certifications = () => {
       title: 'Cloud Computing',
       issuer: 'NPTEL',
       year: '2024',
-      icon: '☁️',
       image: '/images/certificates/nptel-cloud.jpg'
     },
     {
       title: 'Build Generative AI Apps and Solutions with No-Code Tools',
       issuer: 'Infosys',
       year: '2025',
-      icon: '🤖',
       image: '/images/certificates/infosys-ai.jpg'
     },
     {
       title: 'Data Structures and Algorithms Using C++',
       issuer: 'Lovely Professional University',
       year: '2025',
-      icon: '📊',
       image: '/images/certificates/dsa-cpp.jpg'
     },
     {
       title: 'Excellent Python 3 Bootcamp',
       issuer: 'Udemy',
       year: '2023',
-      icon: '🐍',
       image: '/images/certificates/python.jpg'
     },
     {
       title: 'Lean Management',
       issuer: 'Simplilearn',
       year: '2023',
-      icon: '📈',
       image: '/images/certificates/lean-management.jpg'
     },
   ]
@@ -49,19 +44,16 @@ const Certifications = () => {
           {certifications.map((cert, index) => (
             <div
               key={index}
-              className="card flex items-start gap-4 group border-l-4 border-blue-600"
+              className="card group border-l-4 border-blue-600"
             >
-              <div className="text-3xl flex-shrink-0">{cert.icon}</div>
-              <div className="flex-1">
-                <h3 className="font-bold text-lg text-blue-700 mb-1 group-hover:text-blue-600 transition-colors">
-                  {cert.title}
-                </h3>
-                <p className="text-sm text-slate-600 mb-1 font-medium">{cert.issuer}</p>
-                <p className="text-xs text-slate-500 flex items-center gap-1">
-                  <HiCheckCircle className="text-emerald-500" size={14} />
-                  {cert.year}
-                </p>
-              </div>
+              <h3 className="font-bold text-lg text-blue-700 mb-1 group-hover:text-blue-600 transition-colors">
+                {cert.title}
+              </h3>
+              <p className="text-sm text-slate-600 mb-1 font-medium">{cert.issuer}</p>
+              <p className="text-xs text-slate-500 flex items-center gap-1">
+                <HiCheckCircle className="text-emerald-500" size={14} />
+                {cert.year}
+              </p>
             </div>
           ))}
         </div>
