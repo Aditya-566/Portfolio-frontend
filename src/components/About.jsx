@@ -26,7 +26,7 @@ const About = () => {
             </div>
             <div className="bg-blue-50 border border-blue-200 p-4 rounded-lg hover:shadow-md transition-shadow">
               <h3 className="text-blue-700 font-semibold mb-2">💼 Focus</h3>
-              <p className="text-slate-700">Full-Stack Development, Backend Systems & Data Analysis</p>
+              <p className="text-slate-700">Full-Stack Development & Backend Systems</p>
             </div>
             <div className="bg-blue-50 border border-blue-200 p-4 rounded-lg hover:shadow-md transition-shadow">
               <h3 className="text-blue-700 font-semibold mb-2">🚀 Passion</h3>
