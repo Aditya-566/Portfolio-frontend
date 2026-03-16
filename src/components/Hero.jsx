@@ -1,5 +1,5 @@
 import React from 'react'
-import { HiArrowRight } from 'react-icons/hi'
+import { HiArrowRight, HiDownload } from 'react-icons/hi'
 import SocialLinks from './SocialLinks'
 
 const Hero = () => {
@@ -54,6 +54,14 @@ const Hero = () => {
           >
             Contact Me
           </button>
+          <a
+            href="/resume.pdf"
+            download="Aditya_Sharma_Resume.pdf"
+            className="btn-secondary flex items-center justify-center gap-2"
+          >
+            Download Resume
+            <HiDownload />
+          </a>
         </div>
 
         {/* Social Links */}
