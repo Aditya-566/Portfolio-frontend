@@ -53,22 +53,6 @@ const Projects = () => {
        
       ],
     },
-    {
-      id: 4,
-      title: 'Desktop-based Maze Solver',
-      duration: 'Completed',
-      description: 'Built a desktop-based Maze Solver using C++ and SFML, implementing pathfinding algorithms with graphical visualization.',
-      responsibilities: [
-        'Implemented pathfinding algorithms with graphical visualization',
-        'Applied graph data structures and traversal techniques (BFS/DFS)',
-        'Executed numerous coding problems to strengthen understanding of core data structures',
-        'Created user-friendly desktop interface with real-time maze solving',
-      ],
-      tech: ['C++', 'SFML', 'Data Structures', 'Algorithms'],
-      links: [
-        { name: 'GitHub', url: 'https://github.com/Aditya-566/Maze_solver-desktop-application-using-cpp' },
-      ],
-    },
   ]
 
   return (
