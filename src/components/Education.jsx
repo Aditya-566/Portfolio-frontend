@@ -11,6 +11,12 @@ const Education = () => {
       cgpa: '7.05',
     },
     {
+      degree: 'Training',
+      field: 'Data Structures and Algorithms Using C++',
+      institution: 'Lovely Professional University, Punjab, India',
+      period: 'Ongoing',
+    },
+    {
       degree: 'Intermediate (12th Grade)',
       field: 'Science Stream',
       institution: 'Kendriya Vidyalaya Bangana, Himachal Pradesh',
