@@ -31,7 +31,7 @@ const Hero = () => {
 
         {/* Title */}
         <p className="text-xl md:text-2xl text-blue-700 mb-4 font-semibold">
-          Full Stack Developer | MERN Stack Specialist | Problem Solver
+          Aspiring Web Dev
         </p>
 
         {/* Tagline */}
